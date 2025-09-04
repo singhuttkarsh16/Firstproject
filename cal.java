@@ -4,14 +4,12 @@ public class BasicCalculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Input numbers
         System.out.print("Enter first number: ");
         double num1 = sc.nextDouble();
 
         System.out.print("Enter second number: ");
         double num2 = sc.nextDouble();
 
-        // Choose operation
         System.out.println("Choose an operation: +  -  *  /");
         char op = sc.next().charAt(0);
 
@@ -35,7 +33,7 @@ public class BasicCalculator {
                     result = num1 / num2;
                 } else {
                     System.out.println("Error! Division by zero is not allowed.");
-                    return; // exit program
+                    return; 
                 }
                 break;
 
